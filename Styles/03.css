@@ -1,0 +1,99 @@
+body{
+    font-family: 'Roboto';
+}
+
+.font-size {
+    font-size: 20px;
+    
+}
+p, pre{
+    color:  #666;
+    font-size: 12px;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+article{
+    color:  #666;
+    font-size: 14px;
+    background-color: white;
+}
+.marked {
+    color: #c7254e;
+}
+h1 {
+    text-transform: capitalize;
+    font-size: 22px;
+}
+h2 {
+    font-size: 20px;
+}
+h4 {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+}
+.bold{
+    font-weight: bold;
+
+}
+.thin{
+    font-weight: 100;
+
+}
+.max{
+    font-weight: 900;
+
+}
+.normal {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}  
+.font-family-Times {
+    font-family: "Times New Roman", Times, serif;
+}
+    
+.font-family-Arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.green{
+    color:LightGreen ;
+}
+.red{
+    color: #CD5C5C;
+}
+.blue{
+    color: rgb(30, 144, 255); }
+.upper {
+    text-transform: uppercase;
+    }
+    
+.lower {
+    text-transform: lowercase;
+    }
+    
+.capit {
+    text-transform: capitalize;
+    }   
+.overline {
+    text-decoration: overline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline-overline {
+    text-decoration: underline overline;
+} 

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/03.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <h1>Основні властивості CSS для роботи з текстом</h1>
+    
+    
+<!--FONT-SIZE--> 
+<section>
+    <h2>Властивості font-size</h2> 
+    <article>
+        Властивості <span class="marked">font-size</span> змінює розмір шрифта. <br> 
+        Розмір шрифту задається за допомогою значення та одиниць виміру (<span class="marked">em</span>, <span class="marked">px</span>, <span class="marked">pt</span>, <span class="marked">%</span>)
+    </article>    
+    <div>
+        <h3>Синтаксис</h3>
+        <h4>CSS</h4>
+        <pre  >   p {
+    font-size:20px;
+
+    }   </pre>
+         <h4>HTML</h4>
+        <p>&lt;<code>p</code>&gt; Hello world!&lt;<code>/p</code>&gt;</p>
+    </div>
+    <div>
+        <h3>Результат:</h3> 
+        <p class =  " font-size">Hello world</p> 
+    </div>
+</section>
+
+
+<!--FONT-WEIGHT--> 
+<section> 
+    <h2>Властивість font-weight</h2>
+   <article>
+        Властивість <span class="marked">font-weight</span> встановлює насиченість шрифту<br> 
+        Може приймати наступні значення: 
+        <ul>
+            <li><span class="marked">normal</span> - нормальна насиченість, те саме, що і 400</li>
+            <li><span class="marked">bold</span> - напівжирний текст, те саме, що і 700</li>
+            <li><span class="marked">lighter</span> - змінює насиченість відносно бітьківського стилю в меншу сторону</li>
+            <li><span class="marked">bolder</span> - змінює насиченість відносно бітьківського стилю в більшу сторону</li>
+            <li><span class="marked">100</span>, <span class="marked">200</span>, <span class="marked">300</span>, <span class="marked">400</span>, 
+            <span class="marked">500</span>, <span class="marked">600</span>, <span class="marked">700</span>, <span class="marked">800</span>
+            <span class="marked">900</span> - цифрові значення насиченості, які відрізняються від стандартних</li>
+        </ul>
+    </article> 
+    <div>
+        <h3>Синтаксис</h3>
+        <h4>CSS</h4>
+        <pre>
+    bold{
+        font-weight: bold;
+    }
+    .thin{
+        font-weight: 100;
+    }
+    .max{
+        font-weight: 900;
+    }
+        </pre>
+        <h4>HTML</h4>
+        <pre>
+    &lt;<code>p</code>&gt;
+        &lt;<code>span class = 'bold'</code>&gt; Напівжирний текст&lt;<code>/span</code>&gt;,
+        &lt;<code>span class = 'thin'</code>&gt; найтонший текст&lt;<code>/span</code>&gt;,
+        &lt;<code>span class = 'max'</code>&gt; найтовщий текст&lt;<code>/span</code>&gt;.
+    &lt;<code>/p</code>&gt;</pre>
+        </div>
+        <div>
+            <h3>Результат:</h3> 
+            <p><span class = 'bold'>Напівжирний текст</span>, <span class="thin">найтонший текст</span>, <span class="max">найтовщий текст</span>.</p> 
+        </div>
+    </div>
+</section>
+
+
+<!--FONT-STYLE--> 
+<section>
+    <h2>Властивості font-style</h2>
+   <article>
+        Властивості <span class="marked">font-style</span> визначає стиль шрифту для тексту. <br> 
+        Може приймати наступні значення:
+        <ul>
+            <li><span class="marked">normal</span> - відображає звичайний стиль шрифту. Це за замовчуванням</li>
+            <li><span class="marked">italic</span> - відображає стиль шрифту курсивом</li>
+            <li><span class="marked">oblique</span> - відображає похилий стиль шрифту</li>
+        </ul>
+    </article>
+        <div>
+            <h3>Синтаксис</h3>
+            <h4>CSS</h4>
+            <pre>
+    .normal {
+        font-style: normal;
+    }
+    
+    .italic {
+        font-style: italic;
+    }
+    
+    .oblique {
+        font-style: oblique;
+    }                    
+            </pre>
+            <h4>HTML</h4>
+            <pre>
+    &lt;<code>p</code>&gt;
+        &lt;<code>span class="normal"</code>&gt;Це абзац, нормальний. &lt;<code>/span</code>&gt;
+        &lt;<code>span class="italic"</code>&gt;Це абзац, курсив. &lt;<code>/span</code>&gt;
+        &lt;<code>span class="oblique"</code>&gt;Це абзац, косий. &lt;<code>/span</code>&gt;
+    &lt;<code>p</code>&gt;
+            </pre>
+        </div>
+        <div>
+            <h3>Результат:</h3> 
+                <p>
+                    <span class="normal">Це абзац, нормальний.</span> <br>
+                    <span class="italic">Це абзац, курсив.</span> <br>
+                    <span class="oblique">Це абзац, косий.</span>
+                </p> 
+        </div>
+</section>
+
+
+<!--FONT-FAMILY-->
+<section>
+    <h2>Властивість font-family</h2>
+    <article>
+    Властивість <span class="marked">font-family</span> визначає шрифт для елемента. <br> 
+    </article>
+    <div>
+        <h3>Синтаксис</h3>
+        <div>
+        <h4>CSS</h4>
+        <pre>
+    .font-family-Times {
+        font-family: "Times New Roman", Times, serif;
+    }
+        
+    .font-family-Arial {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        </pre>
+    </div>
+    <div>
+        <h4>HTML</h4>
+        <pre>
+    &lt;<code>p class="font-family-Times"</code>&gt;Це абзац, показаний шрифтом Times New Roman.&lt;<code>/p</code>&gt;
+
+    &lt;<code>p class="font-family-Arial"</code>&gt;Це абзац, показаний шрифтом Arial.&lt;<code>/p</code>&gt;
+        </pre>
+        </div></div>
+        <div>
+            <h3>Результат:</h3> 
+            <p>
+    <span class="font-family-Times">Це абзац, показаний шрифтом Times New Roman. <br>
+
+    <span class ="font-family-Arial">Це абзац, показаний шрифтом Arial.</span>
+             
+        </div>
+    </div>
+</section>
+
+
+<!--COLOR-->
+<section>
+    <h2>Властивості color</h2>
+    <article>
+    Властивість <span class="marked">color</span> звизначає колір тексту. <br> 
+    </article>  
+    <div>
+        <h3>Синтаксис</h3>
+        <h4>CSS</h4>
+        <pre>
+    .red {
+        color: LightGreen ;
+    }
+
+    .green {
+        color: #CD5C5C;
+    }
+
+    .blue {
+        color: rgb(30, 144, 255);;
+    }            
+        </pre>
+    </div>
+    <h4>HTML</h4>
+        <div>          <pre>
+&lt;<code>pre</code>&gt;
+    &lt;<code>span class="green"</code>&gt; Це абзац зеленого кольору &lt;<code>/span</code>&gt; 
+    &lt;<code>span class="red"</code>&gt;Це абзац зеленого кольору &lt;<code>/span</code>&gt;
+    &lt;<code>span class="blue"</code>&gt;Це абзац синього кольору &lt;<code>/span</code>&gt;
+&lt;<code>/pre</code>&gt;
+                </pre>
+
+        </div>
+        </div>
+    
+        <h3>Результат:</h3> 
+        <div>
+        <p>
+        <span class="green"> Це абзац зеленого кольору</span> <br>
+        <span class="red">Це абзац зеленого кольору</span><br>
+        <span class="blue">Це абзац синього кольору</span></p>
+</div>
+    </div>
+</section>
+
+
+<!--TEXT-TRANFORM-->
+<section>
+    <h2>Властивості text-transform</h2>
+    <article>
+    Властивість <span class="marked">text-transform</span> контролює використання великих літер у тексті. <br> 
+        <ul>
+            <li><span class="marked">none</span> - Без використання великих літер. Текст відображається таким, яким він є. Це за замовчуванням</li>
+            <li><span class="marked">capitalize	</span> - Перетворює перший символ кожного слова у верхній регістр</li>
+            <li><span class="marked">uppercase</span> - Перетворює всі символи у верхній регістр</li>
+            <li><span class="marked">lowercase</span> - Перетворює всі символи в нижній регістр</li>
+        </ul>
+    </article>  
+    <div>
+        <h3>Синтаксис</h3>
+        <h4>CSS</h4>
+        <pre>
+    .upper {
+        text-transform: uppercase;
+        }
+        
+    .lower {
+        text-transform: lowercase;
+        }
+        
+    .capit {
+        text-transform: capitalize;
+        }         
+        </pre>
+    </div>
+    <h4>HTML</h4>
+        <div>          <pre>
+
+    &lt;<code>pre</code>&gt;
+    &lt;<code>span class="green"</code>&gt; Це абзац зеленого кольору &lt;<code>/span</code>&gt; 
+    &lt;<code>span class="red"</code>&gt;Це абзац зеленого кольору &lt;<code>/span</code>&gt;
+    &lt;<code>span class="blue"</code>&gt;Це абзац синього кольору &lt;<code>/span</code>&gt;
+    &lt;<code>/pre</code>&gt;
+                </pre>
+
+        </div>
+        </div>
+
+        <h3>Результат:</h3> 
+        <div>
+            <pre>
+
+<span class="upper">text-transform: uppercase;</span>
+<span class="lower">text-transform: lowercase;</span>
+<span class="capit">text-transform: capitalize;</span>
+            </pre>
+        </div>
+    </div>
+</section>
+
+
+
+<!--TEXT-DECORATION-->
+<section>
+    <h2>Властивість text-decoration</h2>
+    <article>
+        Властивість <span class="marked">text-decoration</span> визначає прикрасу, додану до тексту, і є скороченою властивістю для:
+        <ul>
+            <li><span class="marked">text-decoration-line</span>(обов'язково)</li>
+            <li><span class="marked">text-decoration-color</span></li>
+            <li><span class="marked">text-decoration-style</span></li>
+        </ul>
+    </article>  
+    <div>
+        <h3>Синтаксис</h3>
+        <h4>CSS</h4>
+        <pre>
+            
+    .overline {
+        text-decoration: overline;
+    }
+    
+    .line-through {
+        text-decoration: line-through;
+    }
+    
+    .underline {
+        text-decoration: underline;
+    }
+    
+    .underline-overline {
+        text-decoration: underline overline;
+    }           
+        </pre>
+    </div>
+    <h4>HTML</h4>
+        <div>          <pre>
+
+    &lt;<code>pre</code>&gt;
+    &lt;<code>span class="green"</code>&gt; Це абзац зеленого кольору &lt;<code>/span</code>&gt; 
+    &lt;<code>span class="red"</code>&gt;Це абзац зеленого кольору &lt;<code>/span</code>&gt;
+    &lt;<code>span class="blue"</code>&gt;Це абзац синього кольору &lt;<code>/span</code>&gt;
+    &lt;<code>/pre</code>&gt;
+                </pre>
+
+        </div>
+        </div>
+
+        <h3>Результат:</h3> 
+        <div>
+        <pre>
+
+        <span class="overline">text-decoration: overline</span>
+        <span class="line-through">text-decoration: line-through;</span>
+        <span class="underline">text-decoration: underline</span>
+        <span class="underline-overline">text-decoration: underline overline</span>
+    </pre>
+    </div>
+    </div>
+</section>
+</body>
+</html>

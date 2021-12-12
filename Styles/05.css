@@ -1,0 +1,52 @@
+.flex-container
+{
+    display: flex;
+    background-color: rgb(50, 66, 92);
+    justify-content: space-between 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.flex-container > .flex-item {
+    background-color: rgb(71, 85, 109);
+    color: white;
+    font-family: sans-serif;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 150%;
+    margin: 0 20px 0;
+  }
+  .logo{
+    background-color: rgb(50, 66, 92);
+}
+.last{
+    background-color: rgb(50, 66, 92);
+}
+.flex-cont{
+    display: flex;
+}
+.flex-cont > div{
+    margin-left: 20px;
+}
+.logos{
+    width: 50px;
+    height: 50px;
+}
+.flex-cont1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flex-cont1 > div > img{
+    background-color: rgb(123, 167, 241);
+}
+.flex-cont2{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.line{
+    width: 2px;
+    background-color: rgb(123, 167, 241);
+}
