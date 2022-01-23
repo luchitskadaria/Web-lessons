@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<h1 class="colorlabel">Анкета відвідувача ресторану</h1>
+<body>
+    <form action="#" class="contain2">
+        <fieldset class = "container">
+            <legend>Контакти</legend>
+            <div class="contain2">
+        <label class = "colorlabel " for="login">Імя</label>
+        <label class = "colorlabel "for="login">Телефон</label>        
+        <label class = "colorlabel "for="login">Email</label>
+        <label class = "colorlabel "for="login">Дата відвідування</label>
+        </div>
+        <div class="contain2">
+        <label><input type="tel"></label>
+        <label><input type="text"></label>
+        <label><input type="email"></label>
+       <input type="date">
+        </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>Персональна інформація</legend>
+            <div class="contain2">
+            <label class = "colorlabel "for="login">Вік</label>
+            <label class = "colorlabel " for="login">Улюблена кухня</label>
+            <label class = "colorlabel " for="login">Які страви ви хотіли би бачити в нашому меню?</label>
+              </div> 
+
+              <div class="contain2">
+               <label><input type="number"></label>
+                <label>
+                    <select name="cusine">
+                        <option value="1">Китайська</option>
+                    </select>
+                
+                </label>
+          
+            <label><textarea name="comment" id = "" cols="30" rows="5"></textarea></label>
+            </div>
+            </fieldset>
+
+        <fieldset class="container">
+            <legend>Оцінка ресторану</legend>
+        <label for="login"> <span class="colorlabel">Як ви дізналися про наш ресторан?</span>
+            <div class="contain2">
+            <label><input type="radio" name="getinfo" value="1">Поруч з будинком роботою</label> 
+            <label> <input type="radio" name="getinfo" value="2">Реклама</label> 
+            <label><input type="radio" name="getinfo" value="3">Порадити знайоми</label> 
+            <label> <input type="radio" name="getinfo" value="4">Пошук в мережі Інтернет</label> 
+            <label><input type="radio" name="getinfo" value="5">Інше</label> 
+        </div>
+        </label>
+        <label  for="login"><span class="colorlabel">Чи будете ви рекомендувати наш ресторан знайомим?</span>
+            <div class="contain2">
+            <label> <input type="radio" checked>Так</label> 
+                <label> <input type="radio">Ні</label> 
+            </div>
+        </label>
+        </fieldset>
+       
+    </form>
+    <button name="send">Відправити</button>
+</body>
+</html>
