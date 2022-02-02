@@ -11,7 +11,7 @@ let EnergyUsed = prompt('Введіть використану елестрое�
 if(EnergyUsed <= 100){
     result = EnergyUsed * 0.90; 
  }else{
-     result = ((EnergyUsed % 100) * 1.68) + ((EnergyUsed - (EnergyUsed % 100)) * 0,90);
+    result = 100* 0.90 + ((EnergyUsed - 100) * 1.68);
  }
 alert(result)
 console.log(`Вартість електроенергії ${result}`);
