@@ -69,8 +69,8 @@ let body = document.getElementsByTagName("body")[0];
   body.appendChild(tbl);
   tbl.setAttribute("border", "0.5");
 
-  let para = document.createElement("p");
-  para.innerText ="Прізвище студента, який важить найбільше - " +  NameOfBigest.name;
-  document.body.appendChild(para);
+  let p = document.createElement("p");
+  p.innerText ="Прізвище студента, який важить найбільше - " +  NameOfBigest.name;
+  document.body.appendChild(p);
 
 }
