@@ -1,6 +1,6 @@
 function ObjectandArrays(){
 alert(`Прізвище студента, його вага. Вивести під таблицею  прізвище студента, який важить найбільше.`)
-let StudentInfo = prompt("Name + weight (Alex 55)");
+let StudentInfo = prompt("Прізвище студента, його вага");
 let Students = [];
 let max = 0;
 while(StudentInfo !=null){
